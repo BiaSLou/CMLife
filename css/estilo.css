@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Source Sans Pro, sans-serif;
+    text-align: center;
+    color: #0000008c;
+}
+
+.topo {
+    background-color: rgb(7, 184, 204);
+    height: 50px;
+}
+
+.secao-topo {
+    margin: 0 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secao-topo img {
+    width: 100px;
+    height: 50px;
+}
+
+.links-topo a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.links-topo a:hover {
+    color: #0000008c;
+}
+
+.capa {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/recepcao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.capa h1 {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    position: absolute;
+    left: 40px;
+    bottom: 130px;
+}
+
+#sobre {
+    margin: 30px auto;
+    height: 320px;
+}
+
+.conteudo {
+    margin: 0px auto;
+    width: 70%;
+}
+
+.conteudo h2 {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.conteudo-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-list img {
+    width: 200px;
+    padding-right: 30px;
+}
+
+.conteudo-list ul {
+    text-align: left;
+}
+
+.descricao {
+    margin: 20px auto;
+    width: 70%;
+    padding: 20px;
+}
+
+.descricao h3 {
+    padding: 12px;
+
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.galeria img {
+    width: 250px;
+}
+
+.galeria figure {
+    box-shadow: 0px 1px 7px 1px gray;
+    border-radius: 3px;
+}
+
+.galeria figcaption {
+    padding: 8px;
+    font-size: 15px;
+}
+
+.botao {
+    margin-top: 40px;
+}
+
+.botao a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(7, 184, 204);
+    color: white;
+}
+
+footer {
+    background-color: rgb(48, 111, 119);
+    height: 200px;
+}
+
+#rodape img {
+    width: 100px;
+    padding-top: 15px;
+}
+
+#rodape p {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+@media (max-width: 425px) {
+    .capa {
+        height: 200px;
+    }
+
+    .capa h1 {
+        font-size: 20px;
+    }
+
+    .conteudo-list img {
+        display: none;
+    }
+
+    .galeria {
+        width: 250px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .galeria figure {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 250px;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .capa {
+        height: 300px;
+    }
+
+    .galeria {
+        width: 250px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .galeria figure {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 400px;
+        height: 250px;
+    }
+}
